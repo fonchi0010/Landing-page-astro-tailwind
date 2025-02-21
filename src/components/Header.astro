@@ -1,18 +1,48 @@
+---
+import {Image} from 'astro:assets'
+import logo from '../images/logo.svg'
+import mockup from '../images/illustration-mockups.svg'
+import heroMobile from '../images/bg-hero-mobile.svg'
+---
+
+
+
 <header class=
-"bg-gray-400">
-    <div>
-        <img 
-        src="" 
-        alt="logo">
-        <button>Try it Free</button>
+"bg-[#ebfbff]
+   max-w-[375px]
+   relative 
+">
+
+    <!-- <Image src={heroMobile} alt="hero-mobile"/> -->
+    <div class=
+    "flex justify-between items-center px-4 pt-12">
+        <Image class=
+        "h-7 w-28" 
+        src={logo} alt="logo"/>
+        <button class=
+        "h-8 w-32 rounded-3xl bg-white font-bold shadow-slate-300 shadow-lg
+        hover:text-slate-400
+        "
+        >Try it Free</button>
     </div>
     <h1 class=
-    "text-3xl"
+    "text-2xl font-semibold pt-14 pb-7 text-center px-12"
     >Build The Community Your Fans Will Love</h1>
-    <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+    <p class=
+    "text-balance text-center font-normal pb-7 px-8"
+    >Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
         Create connections with your users as you engage in genuine discussion. </p>
-    <button>Get Started For Free</button>
-    <div>
-        <img src="" alt="mockup">
+    <div class=
+        "flex justify-center items-center pb-10">
+        <button class=
+        "w-8/12 rounded-3xl border bg-[#ff52bf] py-3 font-bold text-white hover:opacity-50"
+    >Get Started For Free</button>
     </div>    
+    <div class=
+    "flex items-center justify-center pb-7">
+        <Image class=
+        "w-10/12 "
+        src={mockup} alt="mockup"/>
+    </div>      
 </header>
+

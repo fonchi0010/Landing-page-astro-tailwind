@@ -1,21 +1,32 @@
+---
+import {Image} from 'astro:assets'
+import logo from '../images/logo.svg'
+import iconLocation from '../images/icon-location.svg'
+import iconPhone from '../images/icon-phone.svg'
+import iconMail from '../images/icon-email.svg'
+
+import  facebook from '../images/facebook.svg'
+import  twitterx from '../images/twitter.svg'
+import  instagram from '../images/instagram.svg'
+---
 <footer class="bg-gray-800 text-blue-200">
     <div>
-        <img src="" alt="logo">
+        <Image src={logo} alt="logo" />
     </div>
     <article>
         <section>
             <div>
-                <img src="" alt="lugar">
+             <Image src={iconLocation} alt="location"/>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua
+            incididunt ut labore et dolore magna aliqua
             </p>
             </div>
             <div>
-                <img src="" alt="">
+            <Image src={iconPhone} alt="icon-phone"/>
             <p>+1-543-123-4567</p>
             </div>
             <div>
-            <img src="" alt="">
+            <Image src={iconMail} alt="icon-mail"/>
             <p>example@huddle.com</p>
             </div>
         </section>
@@ -31,11 +42,12 @@
         </section>
         <section>
             <div>
-                <img src="" alt="facebook">
-                <img src="" alt="x-twitter">
-                <img src="" alt="instagram">
+                <Image src={facebook} alt="facebook"/>
+                <Image src={twitterx} alt="twitter"/>
+                <Image src={instagram} alt="instagram"/>
             </div>
         </section>
+        <p>&copy; Copyright 2018 Huddle. All rights reserved.</p>
     </article>
 </footer>
 

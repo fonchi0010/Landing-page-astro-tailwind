@@ -1,10 +1,16 @@
 ---
 const {title, text} = Astro.props
+import {Image} from 'astro:assets'
+import  flowingConversation from '../images/illustration-flowing-conversation.svg'
 ---
 
 <section class=
 "bg-red-300">
     <div>
+        <Image class=
+        "h-10 w-10" 
+        src={flowingConversation} 
+        alt="flowing-conversation"/>
         <h2>{title}</h2>
         <p>{text}</p>
     </div>
