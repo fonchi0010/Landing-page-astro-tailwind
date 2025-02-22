@@ -1,7 +1,7 @@
 ---
 import {Image} from 'astro:assets'
-import logo from '../images/logo.svg'
 import iconLocation from '../images/icon-location.svg'
+import logoFooter from '../images/logo-footer.svg'
 import iconPhone from '../images/icon-phone.svg'
 import iconMail from '../images/icon-email.svg'
 
@@ -9,50 +9,77 @@ import  facebook from '../images/facebook.svg'
 import  twitterx from '../images/twitter.svg'
 import  instagram from '../images/instagram.svg'
 ---
-<footer class="bg-gray-800 text-blue-200">
+<footer class=
+"bg-gray-800 text-white max-w-[375px] pt-24 pl-4">
     <div>
-        <Image src={logo} alt="logo" />
+        <Image 
+        class="h-14 w-48 mb-8"  
+        src={logoFooter} alt="logo"/>
     </div>
     <article>
         <section>
-            <div>
-             <Image src={iconLocation} alt="location"/>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            <div class=
+            "flex items-start gap-3 pr-16 pb-6">
+             <Image class=
+             "pt-2" 
+             src={iconLocation} alt="location"/>
+            <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
             incididunt ut labore et dolore magna aliqua
             </p>
             </div>
-            <div>
-            <Image src={iconPhone} alt="icon-phone"/>
+            <div class=
+            "flex items-center gap-3 pb-6">
+            <Image class=
+            "" 
+            src={iconPhone} alt="icon-phone"/>
             <p>+1-543-123-4567</p>
             </div>
-            <div>
+            <div class=
+            "flex items-center gap-3 pb-12">
             <Image src={iconMail} alt="icon-mail"/>
             <p>example@huddle.com</p>
             </div>
         </section>
         <section>
             <ul>
-                <li>About Us</li>
-                <li>What We Do</li>
-                <li>FAQ</li>
-                <li>Career</li>
-                <li>Blog</li>
-                <li>Contact Us</li>
+                <li class="pb-4 
+                hover:underline hover:cursor-pointer"
+                >About Us</li>
+                <li class="pb-4 hover:underline hover:cursor-pointer">What We Do</li>
+                <li class="pb-4 hover:underline hover:cursor-pointer">FAQ</li>
+                <li class="pb-4 hover:underline hover:cursor-pointer">Career</li>
+                <li class="pb-4 hover:underline hover:cursor-pointer">Blog</li>
+                <li class="pb-8 hover:underline hover:cursor-pointer">Contact Us</li>
             </ul>
         </section>
         <section>
-            <div>
-                <Image src={facebook} alt="facebook"/>
-                <Image src={twitterx} alt="twitter"/>
-                <Image src={instagram} alt="instagram"/>
+            <div class=
+            "flex justify-center items-center gap-4 pr-4 pb-4">
+                <Image class=
+                "h-8 w-8 hover:cursor-pointer" 
+                id="facebook"
+                src={facebook} alt="facebook"/>
+                <Image class=
+                "h-8 w-8 hover:cursor-pointer" 
+                src={twitterx} alt="twitter"/>
+                <Image class=
+                "h-8 w-8 hover:cursor-pointer" 
+                src={instagram} alt="instagram"/>
             </div>
         </section>
-        <p>&copy; Copyright 2018 Huddle. All rights reserved.</p>
+        <p class=
+        "pb-8">&copy; Copyright 2018 Huddle. All rights reserved.</p>
     </article>
+    <p 
+    class="pb-6 "
+    >Project development by 
+    <a class=
+    "text-lg hover:text-green-300" 
+    href=""
+    >fonchi0010</a></p>
 </footer>
 
-  
-  
+
 
   
   
