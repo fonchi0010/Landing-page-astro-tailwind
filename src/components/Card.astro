@@ -4,10 +4,21 @@ const {title, text} = Astro.props
 ---
 
 <section class=
-"bg-green-200">
-    <div>
+"
+flex items-center justify-center mt-10 
+max-w-[375px]">
+    <div
+    class="
+    w-11/12 
+    border rounded-2xl ring-8 ring-slate-200/20 
+    text-center
+    "
+    >
         <!-- <Image src={img} alt="card-img"/>  -->
-        <h2>{title}</h2>
-        <p>{text}</p>
+        <h2 class=
+        "pt-12 pb-5 text-2xl"
+        >{title}</h2>
+        <p class=
+        "pb-12 px-6">{text}</p>
     </div>
 </section>

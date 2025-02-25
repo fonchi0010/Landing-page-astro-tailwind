@@ -5,13 +5,24 @@ import  flowingConversation from '../images/illustration-flowing-conversation.sv
 ---
 
 <section class=
-"bg-red-300">
-    <div>
+"flex items-center justify-center 
+max-w-[375px]">
+    <div class=
+    "my-10 w-11/12 
+    border rounded-2xl 
+    ring-8 ring-slate-200/20
+    text-center
+    ">
+    <div class="flex items-center justify-center pt-12">
         <Image class=
-        "h-10 w-10" 
+        "h-4/5 w-4/5" 
         src={flowingConversation} 
         alt="flowing-conversation"/>
-        <h2>{title}</h2>
-        <p>{text}</p>
+    </div>
+        <h2 class=
+        "pt-12 pb-5 text-2xl"
+        >{title}</h2>
+        <p class=
+        "pb-12 px-6">{text}</p>
     </div>
 </section>

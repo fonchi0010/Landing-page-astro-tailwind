@@ -10,7 +10,11 @@ import  twitterx from '../images/twitter.svg'
 import  instagram from '../images/instagram.svg'
 ---
 <footer class=
-"bg-gray-800 text-white max-w-[375px] pt-24 pl-4">
+"bg-gray-800 text-white max-w-[375px]
+mt-64 
+pt-32 pl-4
+relative
+">
     <div>
         <Image 
         class="h-14 w-48 mb-8"  
@@ -55,16 +59,18 @@ import  instagram from '../images/instagram.svg'
         <section>
             <div class=
             "flex justify-center items-center gap-4 pr-4 pb-4">
-                <Image class=
-                "h-8 w-8 hover:cursor-pointer" 
-                id="facebook"
-                src={facebook} alt="facebook"/>
-                <Image class=
-                "h-8 w-8 hover:cursor-pointer" 
-                src={twitterx} alt="twitter"/>
-                <Image class=
-                "h-8 w-8 hover:cursor-pointer" 
-                src={instagram} alt="instagram"/>
+            <Image class=
+            "h-8 w-8 hover:cursor-pointer"
+            id="facebook"
+            src={facebook} alt="facebook"/>
+            <Image class=
+            "h-8 w-8 hover:cursor-pointer"
+            id="twitterx" 
+            src={twitterx} alt="twitterx"/>
+            <Image class=
+            "h-8 w-8 hover:cursor-pointer"
+            id="instagram" 
+            src={instagram} alt="instagram"/>    
             </div>
         </section>
         <p class=
@@ -79,7 +85,12 @@ import  instagram from '../images/instagram.svg'
     >fonchi0010</a></p>
 </footer>
 
-
+<style>
+    #facebook:hover, #twitterx:hover, #instagram:hover{
+        scale: 1.25;
+        opacity: 0.5;
+    }
+</style>
 
   
   
