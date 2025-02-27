@@ -15,14 +15,20 @@ mt-48
 pt-32 pl-4
 relative
 sm:max-w-[640px]
+md:max-w-[768px]
+md:pl-8
+lg:max-w-[1024px]
+xl:max-w-[1280px]
 ">
     <div>
         <Image 
         class="h-14 w-48 mb-8"  
         src={logoFooter} alt="logo"/>
     </div>
-    <article>
-        <section>
+    <article class=
+    "md:flex">
+        <section class=
+        "md:w-4/12">
             <div class=
             "flex items-start gap-3 pr-16 pb-6">
              <Image class=
@@ -45,8 +51,10 @@ sm:max-w-[640px]
             <p>example@huddle.com</p>
             </div>
         </section>
-        <section>
-            <ul>
+        <section class=
+        "md:w-4/12">
+            <ul class=
+            "md:grid md:grid-cols-2 md:gap-4">
                 <li class="pb-4 
                 hover:underline hover:cursor-pointer"
                 >About Us</li>
@@ -57,7 +65,8 @@ sm:max-w-[640px]
                 <li class="pb-8 hover:underline hover:cursor-pointer">Contact Us</li>
             </ul>
         </section>
-        <section>
+        <section class=
+        "md:w-4/12">
             <div class=
             "flex justify-center items-center gap-4 pr-4 pb-4">
             <Image class=
@@ -74,9 +83,10 @@ sm:max-w-[640px]
             src={instagram} alt="instagram"/>    
             </div>
         </section>
-        <p class=
-        "pb-8">&copy; Copyright 2018 Huddle. All rights reserved.</p>
+        
     </article>
+    <p class=
+        "pb-8">&copy; Copyright 2018 Huddle. All rights reserved.</p>
     <p 
     class="pb-6 "
     >Project development by 

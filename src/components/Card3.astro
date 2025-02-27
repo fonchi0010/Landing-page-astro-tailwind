@@ -8,24 +8,37 @@ import  YourUsers from '../images/illustration-your-users.svg'
 "flex items-center justify-center 
 max-w-[375px]
 sm:max-w-[640px]
+md:max-w-[768px]
+lg:max-w-[1024px]
+xl:max-w-[1280px]
 ">
     <div class=
     "my-10 w-11/12 
     border rounded-2xl 
     ring-8 ring-slate-200/20
     text-center
+    md:flex md:flex-row-reverse
     ">
-    <div class="flex items-center justify-center pt-12">
+    <div class="flex items-center justify-center pt-12
+    md:w-6/12 md:pt-2
+    ">
         <Image class=
         "h-4/5 w-4/5" 
         src={YourUsers} 
         alt="your-users"/>
     </div>
+    <div class=
+    "md:w-6/12">
         <h2 class=
-        "pt-12 pb-5 text-2xl font-bold"
+        "pt-12 pb-5 text-2xl font-bold
+        md:text-left md:pl-4
+        "
         >{title}</h2>
         <p class=
-        "pb-12 px-6 font-normal text-[#808d99] text-lg">{text}</p>
+        "pb-12 px-6 font-normal text-[#808d99] text-lg
+        md:text-left
+        ">{text}</p>
+    </div>
     </div>
 </section>
 

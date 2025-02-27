@@ -12,9 +12,13 @@ import mockup from '../images/illustration-mockups.svg'
    max-w-[375px]
    mb-10
    sm:max-w-[640px]
+   md:max-w-[768px]
+   lg:max-w-[1024px]
+   xl:max-w-[1280px]
 ">
     <div class=
-    "flex justify-between items-center px-4 pt-12">
+    "flex justify-between items-center px-4 pt-12
+    ">
         <Image class=
         "h-7 w-32" 
         src={logo} alt="logo"/>
@@ -24,29 +28,44 @@ import mockup from '../images/illustration-mockups.svg'
         "
         >Try it Free</button>
     </div>
-    <h1 class=
+    <article class=
+    "md:flex">
+    <section class=
+    "md:pl-4 md:w-5/12">
+        <h1 class=
     "text-2xl font-semibold pt-14 pb-7 text-center px-12
+    md:text-left md:px-0 md:pt-28
     "
     >Build The Community Your Fans Will Love</h1>
     <p class=
-    "text-lg text-center font-normal pb-7 px-6"
+    "text-lg text-center font-normal pb-7 px-6
+    md:text-left md:px-0
+    "
     >Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
         Create connections with your users as you engage in genuine discussion. </p>
     <div class=
-        "flex justify-center items-center pb-10">
+        "flex justify-center items-center pb-10
+        md:justify-start
+        ">
         <button class=
-        "w-8/12 rounded-3xl border bg-[#ff52bf] py-3 font-bold text-white hover:opacity-50"
+        "w-8/12 rounded-3xl border bg-[#ff52bf] py-3 font-bold 
+        text-white hover:opacity-50"
     >Get Started For Free</button>
-    </div>    
+    </div> 
+    </section>    
     <div class=
-    "flex items-center justify-center pb-7">
+    "flex items-center justify-center pb-7
+    md:w-7/12 md:justify-end md:pr-4 md:pt-14
+    ">
         <Image class=
-        "w-10/12 "
+        "w-10/12 md:w-11/12 md:h-[400px] "
         src={mockup} alt="mockup"/>
-    </div>      
+    </div>
+    </article>      
 </header>
 
 <style>
+
     header{
         background-image: url(../images/bg-hero-mobile.svg);
         background-color: hsl(193, 100%, 96%);
@@ -55,5 +74,10 @@ import mockup from '../images/illustration-mockups.svg'
     }
     h1{
         font-family: "Poppins", sans-serif;
+    }
+    @media(min-width: 768px){
+        header{
+            background-image: url(../images/bg-hero-desktop.svg);
+        }
     }
 </style>
